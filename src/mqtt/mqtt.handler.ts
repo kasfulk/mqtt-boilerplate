@@ -8,7 +8,6 @@ export default class MQTTHandler {
   })
 
   public initializeMosquitto(): void {
-    console.log(process.env.MQTT_URL);
     this.client.on('connect', () => {
       console.log('connected');
       this.client.subscribe(this.topic, (err) => {
