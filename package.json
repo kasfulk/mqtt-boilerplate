@@ -4,7 +4,7 @@
   "main": "src/server.ts",
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.json",
-    "start": "ts-node src/server.ts",
+    "start": "node dist/src/server-mqtt.js",
     "dev": "nodemon --watch 'src/**' --ext 'ts,json' --ignore 'src/**/*.spec.ts' --exec 'ts-node src/server.ts'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
